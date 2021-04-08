@@ -1,0 +1,31 @@
+<head></head>
+<body>
+  <div class="class1" id='div1'>
+    Hello
+    <div class="class1">World!</div>
+  </div>
+  <button class="class1" id="button1">Press Me</button>
+
+  <script>
+    // getElements (plural) will call on every element with that name and turn the variable assigned into
+    //an array.  can be called with class1[0], etc
+    var class1 = document.getElementsByClassName('class1');
+    var button = document.getElementById('button1');
+    // will return with all elements with the div tag
+    // var divs = getElementsByTagName('DIV');
+    //will return first instance of given paramater
+    var first = document.querySelector('.class1')
+    // // retrieves all 
+    var all= document.querySelectorAll('.class1')
+    // //this will pop up an alert at page load 
+
+
+    var div1 = document.getElementById('div1');
+
+    // // will only contain the first inner div of div1
+    var innerDivs = div1.getElementsByClassName('class1');
+
+    alert(button.innerHTML)
+    // alert('hello all')
+  </script>
+</body>

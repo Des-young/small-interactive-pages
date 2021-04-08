@@ -1,0 +1,45 @@
+<head>
+    <style>
+        #div1 {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+  <div class="class1" id='div1'>
+    Hello
+    <div class="class1">World!</div>
+  </div>
+  <button class="class1" id="button1">Press Me</button>
+
+  <script>
+   var div1 =document.getElementById('div1');
+   var div1Class = div1.getAttribute('class');
+   var divHTML = div1.innerHTML;
+   var noValueDiv1Color = 
+//    var div1HTML = alert(div1.innerHTML)
+    div1.style.backgroundColor;
+    alert(window.getComputedStyle(div1).backgroundColor);
+
+    div1.setAttribute('class', 'class2')
+    // alert()
+
+    //changing CSS 
+    //way one:
+    div1.style.backgroundColor = 'pink'
+
+    //way two:
+    // this will override the previous since you are affecting the entire style tag
+    div1.setAttribute('style', 'height: 100px; background-color: pink');
+
+    // var class1 = document.getElementsByClassName('class1');
+    // var button = document.getElementById('button1');
+    // var first = document.querySelector('.class1')
+    // var all= document.querySelectorAll('.class1')
+    // var div1 = document.getElementById('div1');
+    // var innerDivs = div1.getElementsByClassName('class1');
+
+    // alert(button.innerHTML)
+    
+  </script>
+</body>
