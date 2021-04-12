@@ -6,22 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Adventure</title>
     <link href="style.css"  rel="stylesheet" type="text/css"/>
+  
 </head>
 <body>
-       <h1>Find your local Adventure</h1>
+    <h1>Find your local Adventure</h1>
     <div class="search-container">
         <input type="text" id="search-bar"> 
     </div>
     <div class="adventures-container">
-        <div class="adventure">Mountain Bike Tour</div>
-        <div class="adventure">Hinterlands Tour</div>
-        <div class="adventure">Sky Diving</div>
-        <div class="adventure">Local Food Festival</div>
-        <div class="adventure">Sunday Markets Tour</div>
-        <div class="adventure">Food Tasting Tour</div>
-        <div class="adventure">Snorkeling Tour</div>
-        <div class="adventure">Forest Experience</div>
+        <div class="adventures">Mountain Bike Tour</div>
+        <div class="adventures">Hinterlands Tour</div>
+        <div class="adventures">Sky Diving</div>
+        <div class="adventures">Local Food Festival</div>
+        <div class="adventures">Sunday Markets Tour</div>
+        <div class="adventures">Food Tasting Tour</div>
+        <div class="adventures">Snorkeling Tour</div>
+        <div class="adventures">Forest Experience</div>
     </div>
+    <script>
+
+        var adventureList = [];
+    var adventure = document.getElementsByClassName('adventures');
+
+for (var i = 0; i < adventure.length; i++) {
+    var adventureName = adventure[i].innerHTML;
+    adventureList.push(adventureName);
+} 
+
+// console.log(adventureList);
+
+let searchBar = document.getElementById('search-bar');
+
+searchBar.addEventListener("keypress", function(event) {
+    var text = searchBar.value;
+    for (var i = 0; i < adventure.length; i++) {
+        if (adventure[i].indexOf(text) < 0) {
+            adventure[i].style.display = "None";
+        } else {
+            adventure[i].style.display = "Block";
+        }
+    } 
+});
+    </script>
 </body>
 </html>
 
