@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Forms</title>
+</head>
+<body>
+    <div class="container">
+        <form id="saveForm">
+            Name: <input type="text" class="textInput">
+            <br>
+            Address: <input type="text" class="textInput">
+            <br>
+            Age: <input type="number" class="textInput">
+            <br>
+            Pets: <input type="checkbox" value="pet" id="petcheck"> 
+            <br> 
+            <div id="petSelect">
+            Pet: <select>
+                 <option value="dog">Dog</option>
+                 <option value="cat">Cat</option>
+                 <option class="bird">Bird</option>
+                 <option value="other">Other</option>
+            
+            </select>
+            </div>
+            <br>
+             <input type="submit" id="save" value="Save">
+             
+        </form>
+    </div>
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>

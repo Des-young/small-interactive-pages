@@ -1,0 +1,38 @@
+body {
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: turquoise;
+    border: thick solid darkorchid;
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    padding: 10px
+}
+
+.textInput {
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+#petSelect {
+    margin-top: 10px;
+    display: none;
+}
+
+#save {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: purple;
+    color: white;
+}
